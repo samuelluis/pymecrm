@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url("../fonts/MWVf-Rwh4GLQVBEwbyI61Q.woff") format('woff');
+}
+
+
+body{
+
+background-color: #1ED7FF;
+padding: 15px;
+}
+
+input{
+
+		text-align: center;
+		margin-top: 30px;
+
+}
+#txtUsuario{
+	margin-top: 100px;
+
+}
+#btnEntrar{
+
+	margin-top: 50px;
+
+}
+
+.headerInicio{
+
+	width: 100%;
+	background-color: #ed9c28;
+	padding-left: -20px;
+	height: 60px;
+	margin-top: -10px;
+}
+
+#registrarse{
+
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	float: left;
+	color: #fff;
+
+}
+
+.letrasHeader{
+  color: #362C20;
+  text-align: center;
+
+}
+#registrarse:hover{
+
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	float: left;
+	color: #fff;
+    text-decoration:none;
+	border-style: none;
+	font-style: none;
+	
+}

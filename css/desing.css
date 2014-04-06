@@ -1,0 +1,778 @@
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url("../fonts/MWVf-Rwh4GLQVBEwbyI61Q.woff") format('woff');
+}
+
+
+body{
+
+background-color: #1ED7FF;
+}
+
+input{
+
+		text-align: center;
+		margin-top: 30px;
+
+}
+#txtUsuario{
+	margin-top: 100px;
+
+}
+#btnEntrar{
+
+	margin-top: 50px;
+
+}
+
+.headerInicio{
+
+	width: 100%;
+	background-color: #ed9c28;
+	height: 60px;
+	margin-top: -10px;
+	padding: 13px;
+}
+
+.menuOpciones-arrow {
+border-color:  transparent transparent #428bca transparent;
+border-style: solid;
+border-width: 10px;
+height:100px;
+width:10px;
+float: left; 
+position:absolute;
+margin-left: 10px;
+color: red;
+margin-top: -85px;
+display: none;
+}
+
+.mensajePrivado {
+background-color:#428bca;
+position:relative;
+text-align:center;
+width:100%;
+height: 350px;
+float: left;
+margin-top: 15px;
+display: none;
+overflow-y: scroll;
+overflow-x: hidden; 
+}
+
+.nuevoMensajeUsuario{
+
+background-color:#428bca;
+border:2px solid #000;
+line-height:1.3em;
+margin:10px auto;
+padding:10px;
+position:relative;
+text-align:center;
+float: right;
+width:100%;
+height: 390px;
+margin-left: 480px;
+margin-top: 65px;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+-moz-box-shadow:0 0 5px #888888;
+-webkit-box-shadow:0 0 5px #888888;
+display: none;
+}
+
+.mensajePrivados{
+
+  color:#000;
+  float: left;  
+  margin-left: 1220px;
+  margin-top: -35px;
+  color: white;
+}
+.nuevoMensaje{
+  float: left;  
+  margin-left: 120px;
+  margin-top: -5px;
+  color: white;
+}
+.nuevoMensaje:hover{
+  float: left;  
+  margin-left: 120px;
+  margin-top: -5px;
+  color: white;
+  border-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.imagenUsuarioMensaje{
+
+  height: 55px;
+  width: 55px;
+  border-radius: 40px;
+  margin-top: -8px;
+}
+.NombreUsuarioMensaje{
+
+  color: white;
+  float: left;
+  margin-left: 60px;
+  margin-top: -60px;
+
+}
+.mensajeUsuarioMensaje{
+  color: white;
+  float: left;
+  margin-left: 60px;
+  margin-top: -32px;
+}
+.horaUsuarioMensaje{
+
+  color: white;
+  float: left;
+  margin-left: 210px;
+  margin-top: -64px;
+}
+.divisorMensajeUsuario{
+margin-top: 2px;
+
+}
+.verMasUsuarioMensaje{
+float: left;  
+  margin-left: 120px;
+  margin-top: -10px;
+  color: white;
+
+}
+
+.verMasUsuarioMensaje:hover{
+ float: left;  
+  margin-left: 120px;
+  margin-top: -10px;
+  color: white;
+}
+.btnEnviarMsj{
+
+float: left;
+border-radius: 5px;
+margin-top: -10px;
+margin-left: 50px;
+color: #fff;
+background-color: #5cb85c;
+border-color: #4cae4c;
+padding: 6px 12px;
+font-size: 14px;
+border: 1px solid transparent;
+border-radius: 4px;
+margin-top: 12px;
+float: inherit;
+  
+}
+.txtUsuarioMensaje{
+
+width: 100%;
+height: 34px;
+font-size: 14px;
+color: #555;
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin-top: 10px;
+}
+
+
+.txtCuerpoMensaje{
+
+width: 100%;
+height: 220px;
+font-size: 14px;
+color: #555;
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin-top: 15px;
+resize: none;
+}
+
+#cerrarMensajeNuevo{
+float: right;
+color: white;
+
+}
+
+#cerrarAgregarVentas{
+float: right;
+color: white;
+margin-top: -50px;
+
+}
+.nombreUsuario{
+  margin-left: 1050px;
+  float: left;
+  margin-top: -30px;
+  border-style: none;
+  text-decoration: none;
+  color: white;
+
+}
+.nombreUsuario:hover{
+
+  border-style: none;
+  text-decoration: none;
+  color: white;
+  cursor: default;
+}
+
+.imagenUsuario{
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+
+}
+.fotoPerfil{
+
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+}
+
+
+
+.menuOpciones {
+	display: none;
+background-color:#fff;
+text-align:center;
+width:180px;
+float: left; 
+height: 617px;
+overflow-y: scroll;
+overflow-x: hidden; 
+position: absolute;
+}
+
+.fotoPerfil{
+
+  height: 50px;
+  width: 40px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+hr{
+
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+
+
+.main{
+
+background-color: #1ED7FF;
+width: 100%;
+height: 588px
+
+}
+
+#registrarse{
+
+	width: 100%;
+	text-align: center;
+	float: left;
+	color: #fff;
+
+}
+.menuInicio{
+
+float: left;
+margin-top: 8px;
+
+}
+.nombreUsuario{
+
+margin-top: 15px;
+font-family: 'Englebert';
+font-size: 1000px;
+color: #000
+
+}
+
+#tablaVentas 
+{
+  padding: 8px;
+  font-weight: normal;
+  font-size: 12px;
+  color: #039;
+  width: 100%;
+}
+
+
+.txtBuscadorVentas{
+  height: 48px;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 16px;
+  font-family: monospace;
+  border-style: none;
+  border-color: #fff;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.filaArriba th
+{
+  padding: 8px;
+  font-size: 12px;
+  color: #039;
+  background: #b9c9fe;
+  text-align:center;
+}
+
+.btnAgregarVentas{
+float: inherit;
+
+border-radius: 5px;
+color: #fff;
+background-color: #5cb85c;
+border-color: #4cae4c;
+padding: 6px 12px;
+font-size: 12px;
+line-height: 1.428571429;
+border: 1px solid transparent;
+border-radius: 4px;
+width: 40%;
+
+}
+.btnAgregarNuevasVentas{
+float: inherit;
+margin-top: 20px;
+
+border-radius: 5px;
+color: #fff;
+background-color: #5cb85c;
+border-color: #4cae4c;
+padding: 6px 12px;
+font-size: 12px;
+line-height: 1.428571429;
+border: 1px solid transparent;
+border-radius: 4px;
+width: 100%;
+
+}
+#tablaVentas td
+{
+  background: #e8edff;
+  border-top: 1px solid #fff;
+  color: #669;
+  text-align:center;
+  font-size: 12px;
+  width: 630px;
+}
+
+.btnModificarIngresos{
+float: left;
+margin-left: 8px;
+
+}
+.eliminarIngresos{
+float: left;
+margin-left: 8px;
+
+}
+
+
+#tablaVentas tbody tr:hover td
+{
+  background: #d0dafd;
+}
+.tablaVentas{
+  float: right;
+  height:360px;
+  width:100%;
+  overflow:scroll;
+  background-color: #d0dafd;
+}
+
+legend{
+
+ font-size: 19px;
+  font-family: 'Lobster';
+  color: #362C20;
+  text-align: left;
+  margin-top: 10px;
+
+}
+.error3 {
+text-align: center;
+background-color:#d9534f;
+color:#fff;
+margin-top:72px;
+height: 30px;
+width: 100%;
+	float: left;
+	margin-left: -20px;
+position:absolute;
+font-size:15px;
+}
+
+#exampleInputEmail1{
+
+	margin-top: 10px;
+}
+.exampleInputEmail1{
+
+	margin-top: 10px;
+}
+#btnCancelar{
+
+float: left;
+border-radius: 5px;
+color: #fff;
+background-color: #f0ad4e;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.428571429;
+border: 1px solid transparent;
+border-radius: 4px;
+width: 100%;
+margin-bottom: 20px;
+margin-top: 5px;
+}
+#chartContainer{
+
+
+	margin-top: 10px;
+}
+#tipoEmpresa{
+
+	width: 100%;
+	border-radius: 5px;
+	text-align: center;
+	height: 34px;
+	margin-top: 10px;
+}
+
+#genero{
+	width: 100%;
+	border-radius: 5px;
+	text-align: center;
+	height: 34px;
+	margin-top: 10px; 	
+	}
+#btnRegistrarme{
+
+width: 100%;
+float: left;
+border-radius: 5px;
+color: #fff;
+background-color: #4cae4c;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.428571429;
+border: 1px solid transparent;
+border-radius: 4px;
+margin-bottom: 10px;
+margin-top: 25px;
+}
+
+.letrasHeader{
+  font-size: 23px; font-family: 'Lobster';
+  color: #362C20;
+  text-align: right;
+
+}
+#mensajesPrivado{
+  float: right;
+  margin-left: 20px;
+}
+
+
+.cerrarSesion{
+ font-size: 15px;
+	font-family: 'Englebert';
+  color: #362C20;
+  text-align: right;
+  text-decoration: none;
+}
+
+#cerrarConfiguracion{
+
+float: right;
+color: white;
+margin-top: -50px;
+
+}
+#cerrarEconomista{
+
+float: right;
+color: white;
+margin-top: -50px;
+
+}
+#cerrarVentas{
+
+float: right;
+color: white;
+margin-top: -50px;
+
+}
+#cerrarAlmacen{
+
+float: right;
+color: white;
+margin-top: -50px;
+
+}
+#cerrarReportes{
+
+float: right;
+color: white;
+margin-top: -50px;
+
+}
+.letrasConfiguracion{
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+
+}
+
+.cuadroConfiguracion{
+ background-color: #428bca;
+  height: 680px;
+  width:100%;
+  float: left;
+  padding: 30px;
+  display: none;
+}
+.cuadroEconomista{
+	 background-color: #428bca;
+  height: 680px;
+  width:100%;
+  float: left;
+  padding: 30px;
+  display: none;
+}
+.
+#registrarse{
+
+	width: 100%;
+	text-align: center;
+	float: left;
+	color: #fff;
+
+}
+.menuInicio{
+
+float: left;
+margin-top: 8px;
+
+}
+.nombreUsuario{
+
+margin-top: 15px;
+font-family: 'Englebert';
+font-size: 1000px;
+color: #000
+
+}
+
+#tablaVentas 
+{
+  padding: 8px;
+  font-weight: normal;
+  font-size: 12px;
+  color: #039;
+  width: 100%;
+}
+
+
+.txtBuscadorVentas{
+  height: 48px;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 16px;
+  font-family: monospace;
+  border-style: none;
+  border-color: #fff;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.filaArriba th
+{
+  padding: 8px;
+  font-size: 12px;
+  color: #039;
+  background: #b9c9fe;
+  text-align:center;
+}
+
+.btnAgregarVentas{
+float: inherit;
+
+border-radius: 5px;
+color: #fff;
+background-color: #5cb85c;
+border-color: #4cae4c;
+padding: 6px 12px;
+font-size: 12px;
+line-height: 1.428571429;
+border: 1px solid transparent;
+border-radius: 4px;
+width: 40%;
+
+}
+.btnAgregarNuevasVentas{
+float: inherit;
+margin-top: 20px;
+
+border-radius: 5px;
+color: #fff;
+background-color: #5cb85c;
+border-color: #4cae4c;
+padding: 6px 12px;
+font-size: 12px;
+line-height: 1.428571429;
+border: 1px solid transparent;
+border-radius: 4px;
+width: 100%;
+
+}
+#tablaVentas td
+{
+  background: #e8edff;
+  border-top: 1px solid #fff;
+  color: #669;
+  text-align:center;
+  font-size: 12px;
+  width: 630px;
+}
+
+.btnModificarIngresos{
+float: left;
+margin-left: 8px;
+
+}
+.eliminarIngresos{
+float: left;
+margin-left: 8px;
+
+}
+
+
+#tablaVentas tbody tr:hover td
+{
+  background: #d0dafd;
+}
+.tablaVentas{
+  float: right;
+  height:360px;
+  width:100%;
+  overflow:scroll;
+  background-color: #d0dafd;
+}
+
+legend{
+
+ font-size: 19px;
+  font-family: 'Lobster';
+  color: #362C20;
+  text-align: left;
+  margin-top: 10px;
+
+}
+.error3 {
+text-align: center;
+background-color:#d9534f;
+color:#fff;
+margin-top:72px;
+height: 30px;
+width: 100%;
+	float: left;
+	margin-left: -20px;
+position:absolute;
+font-size:15px;
+}
+
+#exampleInputEmail1{
+
+	margin-top: 10px;
+}
+.exampleInputEmail1{
+
+	margin-top: 10px;
+}
+#btnCancelar{
+
+float: left;
+border-radius: 5px;
+color: #fff;
+background-color: #f0ad4e;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.428571429;
+border: 1px solid transparent;
+border-radius: 4px;
+width: 100%;
+margin-bottom: 20px;
+margin-top: 5px;
+}
+#chartContainer{
+
+
+	margin-top: 10px;
+}
+#tipoEmpresa{
+
+	width: 100%;
+	border-radius: 5px;
+	text-align: center;
+	height: 34px;
+	margin-top: 10px;
+}
+
+#genero{
+	width: 100%;
+	border-radius: 5px;
+	text-align: center;
+	height: 34px;
+	margin-top: 10px; 	
+	}
+#btnRegistrarme{
+
+width: 100%;
+float: left;
+border-radius: 5px;
+color: #fff;
+background-color: #4cae4c;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.428571429;
+border: 1px solid transparent;
+border-radius: 4px;
+margin-bottom: 10px;
+margin-top: 25px;
+}
+
+.letrasHeader{
+  font-size: 23px; font-family: 'Lobster';
+  color: #362C20;
+  text-align: right;
+
+}
+#mensajesPrivado{
+  float: right;
+  margin-left: 20px;
+}
+
+
+.cerrarSesion{
+ font-size: 15px;
+	font-family: 'Engleb
